@@ -1,0 +1,103 @@
+1. Por onde começar?
+Ao iniciar um projeto, já compreendendo qual modelo de arquitetura queremos usar, é importante que sigamos a melhor maneira de organização.
+
+Na pasta raiz, ficam os arquivos/pastas de configuração.
+
+[] server.js
+[] package.json
+[] package-lock.json
+[] node-modules/
+[] .gitignore
+
+Sim, o server.js é o arquivo que usamos para ~ configurar ~ o nosso servidor. Logo, ele fica na pasta raiz do projeto!
+
+
+2. Instalando as dependências necessárias
+Como já sei exatamente o que vou precisar pra esse projeto, já faço a instalação das dependências que preciso. E atualizo os scripts quando necessário
+
+[] express 
+    $ npm i express
+
+[] nodemon
+    $ npm i nodemon
+
+! Quando utilizar um projeto já inicializado, que já possui um package.json, posso verificar as dependências já adicionadas e apenas rodar o comando 
+    $ npm install 
+
+
+3. Criando as pastas
+Para criar cada arquivo em seu lugar, bora organizar as pastas do projeto.
+
+[] src
+    [] models
+    [] controllers
+    [] routes
+
+
+4. Iniciando o servidor \o/
+Após criar as pastas para o projeto, podemos inicializar o nosso servidor. Quem lembra do que precisamos para isso? O servidor precisa ter um lugar na sua máquina para ser ouvido...
+
+[] importar o express
+[] instanciar o express
+[] app.listen()
+
+
+5. Criando os arquivos necessários
+Após iniciar o nosso servidor, podemos deixar prontos os arquivos que vamos usar para o exercício
+
+[] arquivos .json dentro da pasta models
+[] arquivo mooviesControler.js
+[] arquivo mooviesRoutes.js
+
+[] arquivo app.js
+
+6. Vamos povoar esses arquivos?
+Iniciando a nossa API, vamos configurar os arquivos necessários para que ela funcione.
+
+[] Configurando a aplicação
+    [] app.js
+        [] importando o express
+        [] exportando o app
+        [] importando o app.js no server.js
+
+[] Escrevendo a primeira lógica
+    [] moviesController.js
+        [] importando arquivo .json
+        [] enviando arquivo .json
+            [] app.get()
+
+[] Definindo a primeira rota
+    [] moviesRoutes.js
+        [] importando nosso controller
+        [] usando express.Router()
+            [] router.get()
+        [] definindo a primeira rota
+        [] exportando o router
+
+O app.js também é o responsável por definir nossa rota padrão!
+
+        [] importando arquivo de rotas moviesRoutes.js
+        [] definindo a rota padrão com app.use()
+
+
+7. Mais lógica \O/
+Vamos agora amadurecer as lógicas que estamos construíndo para filtar nossos dados. Ao criar uma nova lógica, também configuro uma nova rota ;)
+
+    
+
+EXEMPLO EXERCÍCIO 
+- Usar um arquivo json
+- Configurar uma API na arquitetura MVC do zero
+    - Pasta raiz com arquivos de configuração
+    - Instalar as dependências que preciso (express e nodemon)
+    - Criar pasta src
+        - Criar pastas (controllers, routes e models)
+        - Criar arquivos dentro de cada pasta
+    - Iniciar o servidor
+    - Configurar o app.js
+    - Configuro rotas
+    - Configura as lógias (controllers)
+        - Trazer tudo do json
+        - Trazer filtrado titulo
+        - Trazer filtrado por id
+    - Ir rodando e testando no postman (:
