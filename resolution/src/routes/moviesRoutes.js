@@ -5,9 +5,8 @@ import controller from "../controllers/moviesControllers";
 
 router.get("/", controller.home);
 router.get("/all", controller.getAll);
-router.get("/all/ghlibi", controller.getAllGhlibiMovies);
-router.post("/create", controller.createMoovie);
-router.patch("/updateTitle/:id", controller.updateMoovieById);
-router.delete("/delete/:id", controller.deleteMoovieById);
+router.post("/create", controller.createMovie);
+router.patch("/update/:id", controller.updateMovieById);
+router.delete("/delete/:id", controller.deleteMovieById);
 
 export default router;
