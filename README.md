@@ -8,6 +8,16 @@ Algumas outras tecnologias utilizadas: cors, nodemon, bcrypt e axios.
 
 ## Tópicos
 
+### Banco de Dados: NoSQL
+
+### Node.js
+
+### APIs
+
+### Segurança em aplicações web
+
+### Hands on (Projeto mão na massa)
+
 ## Sugestão de Estudo
 
 ## Bibliografia
