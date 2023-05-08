@@ -8,7 +8,7 @@ app.use(cors());
 
 app.use(express.json());
 
-import movies from "./src/routes/moviesRoutes";
+import movies from "./routes/moviesRoutes.js";
 
 app.use("/movies", movies);
 

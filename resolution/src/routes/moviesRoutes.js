@@ -1,7 +1,7 @@
 import app from "./app";
 const router = app.Router();
 
-import controller from "../controllers/moviesControllers";
+import controller from "../controllers/moviesControllers.js";
 
 router.get("/", controller.home);
 router.get("/all", controller.getAll);

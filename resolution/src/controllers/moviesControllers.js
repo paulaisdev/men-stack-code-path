@@ -1,4 +1,4 @@
-import MovieSchema from "../models/movieSchema";
+import MovieSchema from "../models/movieSchema.js";
 import axios from "axios";
 
 // criar funções que controlam as informações, recebendo as requisições e enviando as respostas
