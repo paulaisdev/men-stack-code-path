@@ -2,14 +2,6 @@
 **Objetivo:** Entender o que são banco de dados. Neste cenário, será construído a partir de um arquivo excel, a introdução a banco de dados relacionais e não relacionais. Elas conseguirão distinguir a diferença entre banco de dados relacionais e não relacionais.
 ```
 
-**Mapa do README**
-
-[TOCM]
-
-[TOC]
-<br />
-<br />
-
 # Conceito de dados e banco de dados
 
 ## Dados
