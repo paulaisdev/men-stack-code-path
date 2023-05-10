@@ -205,3 +205,17 @@ Library, framework e package são termos relacionados à programação que descr
 - *Pacote (Package):* é um *arquivo ou conjunto de arquivos que contém um software, biblioteca ou framework e que pode ser instalado em um projeto para fornecer funcionalidades adicionais*. Um pacote pode ser uma biblioteca, um framework, um aplicativo ou uma ferramenta de linha de comando. É comum que um pacote seja distribuído através de um gerenciador de pacotes, como o npm no caso do Node.js, que permite aos desenvolvedores instalar e gerenciar pacotes em seus projetos de forma fácil e consistente.
 
 > 👉 Em resumo, uma biblioteca é um conjunto de recursos específicos que podem ser reutilizados em projetos de software, um framework é uma estrutura para desenvolver aplicativos que define padrões e convenções, enquanto um pacote é um arquivo ou conjunto de arquivos que contém um software, biblioteca ou framework e pode ser instalado em um projeto para fornecer funcionalidades adicionais.
+
+# Prática
+
+Vamos CRUDAR em Node.js!
+
+- Entender as regras de negócio
+
+- Começando do zero: definir a arquitetura, criar as pastas, iniciar repositório e /ou pacotes
+
+- Conectar o servidor
+
+- Conectar o banco de dados
+
+- Codar o CRUD (:
