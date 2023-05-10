@@ -1,16 +1,12 @@
 import MovieSchema from "../models/movieSchema.js";
 import axios from "axios";
 
-// criar funções que controlam as informações, recebendo as requisições e enviando as respostas
-
-// configurar uma rota padrão de apresentação da API (opcional)
 const home = (req, res) => {
   res.status(200).send({
     message: "Olá pessoa, seja bem vinda ao Teraflix!",
   });
 };
 
-// retornar todos os filmes
 const getAll = (req, res) => {
   MovieSchema.find(function (err, movies) {
     if (err) {
@@ -20,7 +16,6 @@ const getAll = (req, res) => {
   });
 };
 
-// cadastrar novo filme
 const createMovie = async (req, res) => {
   try {
     const newMovie = new MovieSchema(req.body);
@@ -38,7 +33,6 @@ const createMovie = async (req, res) => {
   }
 };
 
-// atualizar o gênero do filme
 const updateMovieById = async (req, res) => {
   try {
     const movie = await MovieSchema.findByIdAndUpdate(req.params.id);
@@ -60,7 +54,6 @@ const updateMovieById = async (req, res) => {
   }
 };
 
-// deletar um filme
 const deleteMovieById = (req, res) => {
   const filteredMovie = movies.findByIdAndDelete(req.params.id);
 
