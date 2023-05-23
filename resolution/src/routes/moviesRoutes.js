@@ -3,11 +3,10 @@ const router = app.Router();
 
 import controller from "../controllers/moviesControllers";
 
-router.get("/", controller.home);
-router.get("/all", controller.getAll);
-router.get("/all/ghlibi", controller.getAllGhlibiMovies);
-router.post("/create", controller.createMoovie);
-router.patch("/update/:id", controller.updateMoovieById);
-router.delete("/delete/:id", controller.deleteMoovieById);
+router.get("/", controller.getAll);
+router.get("/ghlibi", controller.getAllGhlibiMovies);
+router.post("/", controller.createMovie);
+router.patch("/:id", controller.updateMovieById);
+router.delete("/:id", controller.deleteMovieById);
 
 export default router;
