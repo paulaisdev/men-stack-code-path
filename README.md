@@ -194,6 +194,20 @@ O MongoDB Atlas é altamente escalável e flexível, permitindo que os usuários
 
 Para este projeto, usaremos o plano gratuito para fins de teste e desenvolvimento.
 
+## Arquitetura MVC
+
+A arquitetura MVC (Model-View-Controller) é um padrão de projeto amplamente utilizado no desenvolvimento de software para separar as responsabilidades e melhorar a organização e manutenção do código. Ele divide um aplicativo em três componentes principais: o Model (Modelo), o View (Visão) e o Controller (Controlador).
+
+- *Model (Modelo):* O modelo *representa os dados e a lógica de negócios do aplicativo*. Ele é responsável por *gerenciar a manipulação, validação e persistência dos dados*. O modelo encapsula a lógica do domínio, como regras de negócio, validações e acesso a banco de dados.
+
+- *View (Visão):* A visão é responsável pela *apresentação dos dados ao usuário*. Ela define a interface do usuário, como telas, formulários e elementos visuais. No geral, ao aplicar a arquitetura MVC em projetos puramente backend, não se utiliza a parte da views.
+
+- *Controller (Controlador):* O controlador *é o intermediário entre o modelo e a visão*. Ele recebe as interações do usuário na interface do usuário e coordena as ações apropriadas a serem executadas no modelo. O controlador *manipula as solicitações do usuário, atualiza o modelo conforme necessário e seleciona a visão apropriada para exibir os resultados*. No caso de uma API, irá gerenciar as requisições e envio de respostas.
+
+A separação dos componentes em MVC permite uma divisão clara de responsabilidades, facilitando a manutenção e evolução do aplicativo. Além disso, o padrão MVC permite a reutilização de componentes, já que as visões e controladores podem ser modificados sem afetar diretamente o modelo subjacente.
+
+MVC é amplamente utilizado em muitos frameworks de desenvolvimento web, como o Ruby on Rails, Django, Laravel e o Spring MVC. Também é aplicável em outras áreas de desenvolvimento de software, não se limitando apenas a aplicativos web.
+
 ### Diferença de librarie, framework e package
 
 Library, framework e package são termos relacionados à programação que descrevem diferentes tipos de software ou recursos que podem ser usados em projetos de desenvolvimento de software. Embora esses termos sejam frequentemente usados de forma intercambiável, eles se referem a conceitos distintos.
