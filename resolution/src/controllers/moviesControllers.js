@@ -3,13 +3,6 @@ import axios from "axios";
 
 // criar funções que controlam as informações, recebendo as requisições e enviando as respostas
 
-// configurar uma rota padrão de apresentação da API (opcional)
-const home = (req, res) => {
-  res.status(200).send({
-    message: "Olá pessoa, seja bem vinda ao Teraflix!",
-  });
-};
-
 // retornar todos os filmes
 const getAll = (req, res) => {
   MovieSchema.find(function (err, movies) {
@@ -89,7 +82,6 @@ const deleteMovieById = (req, res) => {
 };
 
 export default {
-  home,
   getAll,
   getAllGhlibiMovies,
   createMovie,
