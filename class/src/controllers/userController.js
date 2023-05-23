@@ -1,5 +1,4 @@
 import UserSchema from "../models/userSchema";
-import bcrypt from "bcrypt";
 
 const getAll = async (req, res) => {
   UserSchema.find(function (err, users) {
@@ -11,9 +10,6 @@ const getAll = async (req, res) => {
 };
 
 const createUser = async (req, res) => {
-  const hashedPassword = bcrypt.hashSync(req.body.password, 10);
-  req.body.password = hashedPassword;
-
   try {
     const newUser = new UserSchema(req.body);
 
