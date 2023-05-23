@@ -21,7 +21,6 @@ const getAll = (req, res) => {
 };
 
 // retornar filmes de uma api terceira
-
 const getAllGhlibiMovies = async (req, res) => {
   const response = await axios.get("https://ghibliapi.herokuapp.com/films");
   const data = await response.data;
@@ -38,7 +37,7 @@ const createMovie = async (req, res) => {
 
     res.status(200).json({
       message: "Filme adicionado com sucesso!",
-      savedUser,
+      savedMovie,
     });
   } catch (error) {
     res.status(500).json({
