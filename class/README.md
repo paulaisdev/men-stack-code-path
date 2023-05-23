@@ -61,24 +61,24 @@ Com o login realizado, a cada nova requisição o token é enviado no body da re
 
 ~~~ javascript
 const createUser = async (req, res) => {
-    const hashedPassword = bcrypt.hashSync(req.body.password, 10)
-    req.body.password = hashedPassword
+    const hashedPassword = bcrypt.hashSync(req.body.password, 10);
+    req.body.password = hashedPassword;
 
-    const newUser = new UserSchema(req.body)
+    const newUser = new UserSchema(req.body);
 
     try {
-      const savedUser = await newUser.save()
+      const savedUser = await newUser.save();
 
         res.status(200).json({
             message: "User adicionado com sucesso!",
             savedUser
-        })
+        });
     } catch (error) {
         res.status(500).json({
             message: error.message
         })
     }
-}
+};
 ~~~
 
 4. Criar novo user no banco com a senha hasherizada e o login (email) recebido no body da request
