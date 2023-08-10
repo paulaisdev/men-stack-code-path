@@ -1,17 +1,15 @@
 import express from "express";
 const app = express();
 
-require("dotenv-safe").config();
-
 const cors = require("cors");
 app.use(cors());
 
-import db from "./config/database";
-import userRoutes from "./routes/userRoutes";
+app.use(express.json());
 
+import db from "./config/database";
 db.connect();
 
-app.use(express.json());
+import userRoutes from "./routes/userRoutes";
 app.use("/users", userRoutes);
 
 export default app;
